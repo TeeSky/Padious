@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352A9F7E240182BE00239060 /* BaseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F7D240182BE00239060 /* BaseScreenView.swift */; };
+		352A9F80240182C900239060 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F7F240182C900239060 /* BaseViewController.swift */; };
+		352A9F872401898100239060 /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F862401898100239060 /* ColorProvider.swift */; };
+		352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8824019B5200239060 /* AppColorProtocol.swift */; };
+		352A9F8B24019EAD00239060 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8A24019EAD00239060 /* Shared.swift */; };
+		352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8C2401A2E500239060 /* ColorProviding.swift */; };
+		35320CDE23FF359700E63A82 /* ViewControllerProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */; };
+		35320CE323FF3B1700E63A82 /* WindowControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35320CE223FF3B1700E63A82 /* WindowControlling.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
-		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
-		359CC1E723FCAB3D0092D282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E623FCAB3D0092D282 /* ViewController.swift */; };
-		359CC1EA23FCAB3D0092D282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1E823FCAB3D0092D282 /* Main.storyboard */; };
+		359CC1E523FCAB3D0092D282 /* MainPadSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
 		359CC1EF23FCAB3E0092D282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1ED23FCAB3E0092D282 /* LaunchScreen.storyboard */; };
 		359CC1FA23FCAB3E0092D282 /* PadiousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1F923FCAB3E0092D282 /* PadiousTests.swift */; };
@@ -35,11 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352A9F7D240182BE00239060 /* BaseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenView.swift; sourceTree = "<group>"; };
+		352A9F7F240182C900239060 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		352A9F862401898100239060 /* ColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
+		352A9F8824019B5200239060 /* AppColorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColorProtocol.swift; path = ../Dependencies/AppColorProtocol.swift; sourceTree = "<group>"; };
+		352A9F8A24019EAD00239060 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		352A9F8C2401A2E500239060 /* ColorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProviding.swift; sourceTree = "<group>"; };
+		35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProviding.swift; sourceTree = "<group>"; };
+		35320CE223FF3B1700E63A82 /* WindowControlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowControlling.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		359CC1E623FCAB3D0092D282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		359CC1E923FCAB3D0092D282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPadSceneDelegate.swift; sourceTree = "<group>"; };
 		359CC1EB23FCAB3E0092D282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359CC1EE23FCAB3E0092D282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		359CC1F023FCAB3E0092D282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +88,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35201F9323FCC686006C7C40 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */,
+				35320CE223FF3B1700E63A82 /* WindowControlling.swift */,
+				352A9F8C2401A2E500239060 /* ColorProviding.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		352A9F852401897100239060 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F862401898100239060 /* ColorProvider.swift */,
+				352A9F8A24019EAD00239060 /* Shared.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		352A9F8E2401CFBC00239060 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F7F240182C900239060 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		35320CDF23FF35FE00E63A82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F8824019B5200239060 /* AppColorProtocol.swift */,
+				352A9F7D240182BE00239060 /* BaseScreenView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		359CC1D623FCAB3D0092D282 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +147,12 @@
 		359CC1E123FCAB3D0092D282 /* Padious */ = {
 			isa = PBXGroup;
 			children = (
+				352A9F8E2401CFBC00239060 /* ViewControllers */,
+				352A9F852401897100239060 /* Resources */,
+				35320CDF23FF35FE00E63A82 /* Models */,
+				35201F9323FCC686006C7C40 /* Dependencies */,
 				359CC1E223FCAB3D0092D282 /* AppDelegate.swift */,
-				359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */,
-				359CC1E623FCAB3D0092D282 /* ViewController.swift */,
-				359CC1E823FCAB3D0092D282 /* Main.storyboard */,
+				359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */,
 				359CC1EB23FCAB3E0092D282 /* Assets.xcassets */,
 				359CC1ED23FCAB3E0092D282 /* LaunchScreen.storyboard */,
 				359CC1F023FCAB3E0092D282 /* Info.plist */,
@@ -136,6 +186,7 @@
 			buildConfigurationList = 359CC20923FCAB3E0092D282 /* Build configuration list for PBXNativeTarget "Padious" */;
 			buildPhases = (
 				359CC1DB23FCAB3D0092D282 /* Sources */,
+				351FF22B23FCBAD000007579 /* Run Script - SwiftLint check */,
 				359CC1DC23FCAB3D0092D282 /* Frameworks */,
 				359CC1DD23FCAB3D0092D282 /* Resources */,
 			);
@@ -234,7 +285,6 @@
 			files = (
 				359CC1EF23FCAB3E0092D282 /* LaunchScreen.storyboard in Resources */,
 				359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */,
-				359CC1EA23FCAB3D0092D282 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +304,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		351FF22B23FCBAD000007579 /* Run Script - SwiftLint check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint check";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		359CC1DB23FCAB3D0092D282 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				359CC1E723FCAB3D0092D282 /* ViewController.swift in Sources */,
+				352A9F8B24019EAD00239060 /* Shared.swift in Sources */,
+				35320CE323FF3B1700E63A82 /* WindowControlling.swift in Sources */,
+				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
 				359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */,
-				359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */,
+				359CC1E523FCAB3D0092D282 /* MainPadSceneDelegate.swift in Sources */,
+				35320CDE23FF359700E63A82 /* ViewControllerProviding.swift in Sources */,
+				352A9F872401898100239060 /* ColorProvider.swift in Sources */,
+				352A9F80240182C900239060 /* BaseViewController.swift in Sources */,
+				352A9F7E240182BE00239060 /* BaseScreenView.swift in Sources */,
+				352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +375,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		359CC1E823FCAB3D0092D282 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				359CC1E923FCAB3D0092D282 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		359CC1ED23FCAB3E0092D282 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4UQ3LXCE4;
 				INFOPLIST_FILE = Padious/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4UQ3LXCE4;
 				INFOPLIST_FILE = Padious/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
