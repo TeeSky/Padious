@@ -28,17 +28,17 @@ struct AppTheme: ColorProviding {
 
         var appColor: AppColorProtocol {
             switch self {
-                case .dark:     return Self.darkAppColor
-                case .light:    return Self.lightAppColor
+            case .dark:     return Self.darkAppColor
+            case .light:    return Self.lightAppColor
             }
         }
     }
 
     func getAppColorFor(_ traitCollection: UITraitCollection) -> AppColorProtocol {
         switch traitCollection.userInterfaceStyle {
-            case .dark:                 return UserInterfaceStyle.dark.appColor
-            case .light, .unspecified:  return UserInterfaceStyle.light.appColor
-            @unknown default:           return UserInterfaceStyle.light.appColor
+        case .dark:                 return UserInterfaceStyle.dark.appColor
+        case .light, .unspecified:  return UserInterfaceStyle.light.appColor
+        @unknown default:           return UserInterfaceStyle.light.appColor
         }
     }
 
