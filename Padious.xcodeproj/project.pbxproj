@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352A9F7E240182BE00239060 /* BaseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F7D240182BE00239060 /* BaseScreenView.swift */; };
+		352A9F80240182C900239060 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F7F240182C900239060 /* BaseViewController.swift */; };
+		352A9F872401898100239060 /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F862401898100239060 /* ColorProvider.swift */; };
+		352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8824019B5200239060 /* AppColorProtocol.swift */; };
+		352A9F8B24019EAD00239060 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8A24019EAD00239060 /* Shared.swift */; };
+		352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8C2401A2E500239060 /* ColorProviding.swift */; };
+		35320CDE23FF359700E63A82 /* ViewControllerProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */; };
+		35320CE323FF3B1700E63A82 /* WindowControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35320CE223FF3B1700E63A82 /* WindowControlling.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* MainPadSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */; };
 		359CC1E723FCAB3D0092D282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E623FCAB3D0092D282 /* ViewController.swift */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352A9F7D240182BE00239060 /* BaseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenView.swift; sourceTree = "<group>"; };
+		352A9F7F240182C900239060 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		352A9F862401898100239060 /* ColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
+		352A9F8824019B5200239060 /* AppColorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColorProtocol.swift; path = ../Dependencies/AppColorProtocol.swift; sourceTree = "<group>"; };
+		352A9F8A24019EAD00239060 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		352A9F8C2401A2E500239060 /* ColorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProviding.swift; sourceTree = "<group>"; };
+		35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProviding.swift; sourceTree = "<group>"; };
+		35320CE223FF3B1700E63A82 /* WindowControlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowControlling.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPadSceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +90,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35201F9323FCC686006C7C40 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */,
+				35320CE223FF3B1700E63A82 /* WindowControlling.swift */,
+				352A9F8C2401A2E500239060 /* ColorProviding.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		352A9F852401897100239060 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F862401898100239060 /* ColorProvider.swift */,
+				352A9F8A24019EAD00239060 /* Shared.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		352A9F8E2401CFBC00239060 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F7F240182C900239060 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		35320CDF23FF35FE00E63A82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F8824019B5200239060 /* AppColorProtocol.swift */,
+				352A9F7D240182BE00239060 /* BaseScreenView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		359CC1D623FCAB3D0092D282 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +149,10 @@
 		359CC1E123FCAB3D0092D282 /* Padious */ = {
 			isa = PBXGroup;
 			children = (
+				352A9F8E2401CFBC00239060 /* ViewControllers */,
+				352A9F852401897100239060 /* Resources */,
+				35320CDF23FF35FE00E63A82 /* Models */,
+				35201F9323FCC686006C7C40 /* Dependencies */,
 				359CC1E223FCAB3D0092D282 /* AppDelegate.swift */,
 				359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */,
 				359CC1E623FCAB3D0092D282 /* ViewController.swift */,
@@ -278,8 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				359CC1E723FCAB3D0092D282 /* ViewController.swift in Sources */,
+				352A9F8B24019EAD00239060 /* Shared.swift in Sources */,
+				35320CE323FF3B1700E63A82 /* WindowControlling.swift in Sources */,
+				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
 				359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */,
 				359CC1E523FCAB3D0092D282 /* MainPadSceneDelegate.swift in Sources */,
+				35320CDE23FF359700E63A82 /* ViewControllerProviding.swift in Sources */,
+				352A9F872401898100239060 /* ColorProvider.swift in Sources */,
+				352A9F80240182C900239060 /* BaseViewController.swift in Sources */,
+				352A9F7E240182BE00239060 /* BaseScreenView.swift in Sources */,
+				352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
