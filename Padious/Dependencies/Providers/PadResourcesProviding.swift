@@ -6,7 +6,7 @@
 //  Copyright © 2020 Tomas Skypala. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol SoundEffect {
 
@@ -15,7 +15,7 @@ protocol SoundEffect {
 
 struct PadResource {
 
-    let image: UIImage
+    let imageURL: URL
     let soundEffect: SoundEffect
 }
 
