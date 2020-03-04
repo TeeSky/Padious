@@ -9,11 +9,11 @@
 import UIKit
 
 struct PadsSceneDependencyProvider: SceneDependencyProviding {
-    
+
     var sceneHandler: WindowSceneHandling?
-    
+
     func makeRootViewController() -> UIViewController {
         return PadsViewController(rootView: PadsContentView())
     }
-    
+
 }

@@ -9,5 +9,5 @@
 import SwiftUI
 
 final class PadsViewController: UIHostingController<PadsContentView> {
-    
+
 }
