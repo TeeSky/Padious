@@ -53,6 +53,9 @@
 		354CAA272410564700D7F6B7 /* 5-hehehe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA012410564700D7F6B7 /* 5-hehehe.mp3 */; };
 		354CAA282410564700D7F6B7 /* 16-lenaby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA022410564700D7F6B7 /* 16-lenaby.mp3 */; };
 		354CAA2A2410569800D7F6B7 /* PadResourcesProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */; };
+		354CAA2C24105BF600D7F6B7 /* GridMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA2B24105BF600D7F6B7 /* GridMaking.swift */; };
+		354CAA3024105DE600D7F6B7 /* ScalingGridMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */; };
+		354CAA332410619B00D7F6B7 /* Array+chunked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA322410619B00D7F6B7 /* Array+chunked.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
@@ -139,6 +142,9 @@
 		354CAA012410564700D7F6B7 /* 5-hehehe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5-hehehe.mp3"; sourceTree = "<group>"; };
 		354CAA022410564700D7F6B7 /* 16-lenaby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16-lenaby.mp3"; sourceTree = "<group>"; };
 		354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadResourcesProviding.swift; sourceTree = "<group>"; };
+		354CAA2B24105BF600D7F6B7 /* GridMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMaking.swift; sourceTree = "<group>"; };
+		354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingGridMaker.swift; sourceTree = "<group>"; };
+		354CAA322410619B00D7F6B7 /* Array+chunked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunked.swift"; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +282,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		354CAA312410618B00D7F6B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				354CAA322410619B00D7F6B7 /* Array+chunked.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		359CC1D623FCAB3D0092D282 = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +315,7 @@
 		359CC1E123FCAB3D0092D282 /* Padious */ = {
 			isa = PBXGroup;
 			children = (
+				354CAA312410618B00D7F6B7 /* Extensions */,
 				352A9F8E2401CFBC00239060 /* ViewControllers */,
 				35320CDF23FF35FE00E63A82 /* Models */,
 				35201F9323FCC686006C7C40 /* Dependencies */,
@@ -346,6 +361,8 @@
 				47169A96240FE0F5003FE909 /* SceneDependencyProviding.swift */,
 				47169A92240FDF0F003FE909 /* PadsSceneDependencyProvider.swift */,
 				354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */,
+				354CAA2B24105BF600D7F6B7 /* GridMaking.swift */,
+				354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -605,11 +622,14 @@
 				352A9F8B24019EAD00239060 /* Shared.swift in Sources */,
 				47169A95240FDF8F003FE909 /* SceneConfiguration.swift in Sources */,
 				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
+				354CAA2C24105BF600D7F6B7 /* GridMaking.swift in Sources */,
 				47169A97240FE0F5003FE909 /* SceneDependencyProviding.swift in Sources */,
 				354CAA2A2410569800D7F6B7 /* PadResourcesProviding.swift in Sources */,
+				354CAA332410619B00D7F6B7 /* Array+chunked.swift in Sources */,
 				359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */,
 				359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */,
 				352A9F872401898100239060 /* AppTheme.swift in Sources */,
+				354CAA3024105DE600D7F6B7 /* ScalingGridMaker.swift in Sources */,
 				352A9F80240182C900239060 /* ScreenViewController.swift in Sources */,
 				352A9F7E240182BE00239060 /* ScreenView.swift in Sources */,
 				47169A9C240FE371003FE909 /* PadsViewController.swift in Sources */,
