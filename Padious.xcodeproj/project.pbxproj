@@ -13,6 +13,7 @@
 		352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8824019B5200239060 /* AppColorProtocol.swift */; };
 		352A9F8B24019EAD00239060 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8A24019EAD00239060 /* Shared.swift */; };
 		352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8C2401A2E500239060 /* ColorProviding.swift */; };
+		354CA96224104E0100D7F6B7 /* PadResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CA95A24104D7400D7F6B7 /* PadResources.bundle */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
@@ -28,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		354CA96024104DED00D7F6B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359CC1D723FCAB3D0092D282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 354CA95924104D7400D7F6B7;
+			remoteInfo = PadResources;
+		};
 		359CC1F623FCAB3E0092D282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 359CC1D723FCAB3D0092D282 /* Project object */;
@@ -51,6 +59,8 @@
 		352A9F8824019B5200239060 /* AppColorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorProtocol.swift; sourceTree = "<group>"; };
 		352A9F8A24019EAD00239060 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		352A9F8C2401A2E500239060 /* ColorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProviding.swift; sourceTree = "<group>"; };
+		354CA95A24104D7400D7F6B7 /* PadResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		354CA95C24104D7400D7F6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,12 +136,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		354CA95B24104D7400D7F6B7 /* PadResources */ = {
+			isa = PBXGroup;
+			children = (
+				354CA95C24104D7400D7F6B7 /* Info.plist */,
+			);
+			path = PadResources;
+			sourceTree = "<group>";
+		};
 		359CC1D623FCAB3D0092D282 = {
 			isa = PBXGroup;
 			children = (
 				359CC1E123FCAB3D0092D282 /* Padious */,
 				359CC1F823FCAB3E0092D282 /* PadiousTests */,
 				359CC20323FCAB3E0092D282 /* PadiousUITests */,
+				354CA95B24104D7400D7F6B7 /* PadResources */,
 				359CC1E023FCAB3D0092D282 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,6 +161,7 @@
 				359CC1DF23FCAB3D0092D282 /* Padious.app */,
 				359CC1F523FCAB3E0092D282 /* PadiousTests.xctest */,
 				359CC20023FCAB3E0092D282 /* PadiousUITests.xctest */,
+				354CA95A24104D7400D7F6B7 /* PadResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +253,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		354CA95924104D7400D7F6B7 /* PadResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354CA95F24104D7400D7F6B7 /* Build configuration list for PBXNativeTarget "PadResources" */;
+			buildPhases = (
+				354CA95824104D7400D7F6B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PadResources;
+			productName = PadResources;
+			productReference = 354CA95A24104D7400D7F6B7 /* PadResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		359CC1DE23FCAB3D0092D282 /* Padious */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 359CC20923FCAB3E0092D282 /* Build configuration list for PBXNativeTarget "Padious" */;
@@ -245,6 +280,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				354CA96124104DED00D7F6B7 /* PBXTargetDependency */,
 			);
 			name = Padious;
 			productName = Padious;
@@ -297,6 +333,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Tomas Skypala";
 				TargetAttributes = {
+					354CA95924104D7400D7F6B7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					359CC1DE23FCAB3D0092D282 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -326,15 +365,24 @@
 				359CC1DE23FCAB3D0092D282 /* Padious */,
 				359CC1F423FCAB3E0092D282 /* PadiousTests */,
 				359CC1FF23FCAB3E0092D282 /* PadiousUITests */,
+				354CA95924104D7400D7F6B7 /* PadResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		354CA95824104D7400D7F6B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		359CC1DD23FCAB3D0092D282 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354CA96224104E0100D7F6B7 /* PadResources.bundle in Resources */,
 				359CC1EF23FCAB3E0092D282 /* LaunchScreen.storyboard in Resources */,
 				359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */,
 			);
@@ -418,6 +466,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		354CA96124104DED00D7F6B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 354CA95924104D7400D7F6B7 /* PadResources */;
+			targetProxy = 354CA96024104DED00D7F6B7 /* PBXContainerItemProxy */;
+		};
 		359CC1F723FCAB3E0092D282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 359CC1DE23FCAB3D0092D282 /* Padious */;
@@ -442,6 +495,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		354CA95D24104D7400D7F6B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4UQ3LXCE4;
+				INFOPLIST_FILE = PadResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = xskypala.Padious.PadResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		354CA95E24104D7400D7F6B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4UQ3LXCE4;
+				INFOPLIST_FILE = PadResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = xskypala.Padious.PadResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		359CC20723FCAB3E0092D282 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -681,6 +766,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		354CA95F24104D7400D7F6B7 /* Build configuration list for PBXNativeTarget "PadResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354CA95D24104D7400D7F6B7 /* Debug */,
+				354CA95E24104D7400D7F6B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		359CC1DA23FCAB3D0092D282 /* Build configuration list for PBXProject "Padious" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
