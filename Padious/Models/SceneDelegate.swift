@@ -8,22 +8,6 @@
 
 import UIKit
 
-protocol SceneDependencyProviding {
-
-    var sceneHandler: WindowSceneHandling? { get }
-
-    init()
-
-    func makeRootViewController() -> UIViewController
-}
-
-protocol WindowSceneHandling {
-
-    func windowWillBecomeVisible(_ window: UIWindow)
-
-    func windowDidBecomeVisible(_ window: UIWindow)
-}
-
 final class SceneDelegate<DependencyProvider: SceneDependencyProviding>: UIResponder, UIWindowSceneDelegate {
 
     let dependencyProvider = DependencyProvider()

@@ -1,5 +1,5 @@
 //
-//  ColorProvider.swift
+//  AppTheme.swift
 //  Padious
 //
 //  Created by Tomas Skypala on 22/02/2020.

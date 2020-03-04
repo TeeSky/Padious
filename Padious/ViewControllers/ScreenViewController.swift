@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  ScreenViewController.swift
 //  Padious
 //
 //  Created by Tomas Skypala on 22/02/2020.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class BaseViewController<ScreenView: BaseScreenView>: UIViewController {
+class ScreenViewController<SV: ScreenView>: UIViewController {
 
     open var theme: ColorProviding = Shared.appTheme
 
-    var screenView: ScreenView {
-        guard let screenView = view as? ScreenView else {
-            assertionFailure("View controller's screen view \(ScreenView.Type.self) found nil.")
-            let screenView = ScreenView()
+    var screenView: SV {
+        guard let screenView = view as? SV else {
+            assertionFailure("View controller's screen view \(SV.Type.self) found nil.")
+            let screenView = SV()
             self.view = screenView
             return screenView
         }
@@ -23,7 +23,7 @@ class BaseViewController<ScreenView: BaseScreenView>: UIViewController {
     }
 
     override func loadView() {
-        view = ScreenView()
+        view = SV()
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
