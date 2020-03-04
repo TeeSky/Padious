@@ -19,10 +19,12 @@
 		359CC1EF23FCAB3E0092D282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1ED23FCAB3E0092D282 /* LaunchScreen.storyboard */; };
 		359CC1FA23FCAB3E0092D282 /* PadiousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1F923FCAB3E0092D282 /* PadiousTests.swift */; };
 		359CC20523FCAB3E0092D282 /* PadiousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC20423FCAB3E0092D282 /* PadiousUITests.swift */; };
-		47169A93240FDF0F003FE909 /* PadSceneDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169A92240FDF0F003FE909 /* PadSceneDependencyProvider.swift */; };
+		47169A93240FDF0F003FE909 /* PadsSceneDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169A92240FDF0F003FE909 /* PadsSceneDependencyProvider.swift */; };
 		47169A95240FDF8F003FE909 /* SceneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169A94240FDF8F003FE909 /* SceneConfiguration.swift */; };
 		47169A97240FE0F5003FE909 /* SceneDependencyProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169A96240FE0F5003FE909 /* SceneDependencyProviding.swift */; };
 		47169A9A240FE1AE003FE909 /* WindowSceneHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169A99240FE1AE003FE909 /* WindowSceneHandling.swift */; };
+		47169A9C240FE371003FE909 /* PadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169A9B240FE371003FE909 /* PadsViewController.swift */; };
+		47169AA3240FE50C003FE909 /* PadsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169AA2240FE50C003FE909 /* PadsContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +63,12 @@
 		359CC20023FCAB3E0092D282 /* PadiousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadiousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC20423FCAB3E0092D282 /* PadiousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadiousUITests.swift; sourceTree = "<group>"; };
 		359CC20623FCAB3E0092D282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47169A92240FDF0F003FE909 /* PadSceneDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadSceneDependencyProvider.swift; sourceTree = "<group>"; };
+		47169A92240FDF0F003FE909 /* PadsSceneDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsSceneDependencyProvider.swift; sourceTree = "<group>"; };
 		47169A94240FDF8F003FE909 /* SceneConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneConfiguration.swift; sourceTree = "<group>"; };
 		47169A96240FE0F5003FE909 /* SceneDependencyProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDependencyProviding.swift; sourceTree = "<group>"; };
 		47169A99240FE1AE003FE909 /* WindowSceneHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSceneHandling.swift; sourceTree = "<group>"; };
+		47169A9B240FE371003FE909 /* PadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsViewController.swift; sourceTree = "<group>"; };
+		47169AA2240FE50C003FE909 /* PadsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				352A9F7F240182C900239060 /* ScreenViewController.swift */,
+				47169A9B240FE371003FE909 /* PadsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,7 +119,7 @@
 		35320CDF23FF35FE00E63A82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				352A9F7D240182BE00239060 /* ScreenView.swift */,
+				47169AA0240FE3F7003FE909 /* UI */,
 				359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */,
 				47169A94240FDF8F003FE909 /* SceneConfiguration.swift */,
 			);
@@ -187,7 +192,7 @@
 			children = (
 				352A9F8C2401A2E500239060 /* ColorProviding.swift */,
 				47169A96240FE0F5003FE909 /* SceneDependencyProviding.swift */,
-				47169A92240FDF0F003FE909 /* PadSceneDependencyProvider.swift */,
+				47169A92240FDF0F003FE909 /* PadsSceneDependencyProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -198,6 +203,31 @@
 				47169A99240FE1AE003FE909 /* WindowSceneHandling.swift */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		47169A9D240FE3A7003FE909 /* Screen Views */ = {
+			isa = PBXGroup;
+			children = (
+				352A9F7D240182BE00239060 /* ScreenView.swift */,
+			);
+			path = "Screen Views";
+			sourceTree = "<group>";
+		};
+		47169AA0240FE3F7003FE909 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47169AA1240FE4DB003FE909 /* Content Views */,
+				47169A9D240FE3A7003FE909 /* Screen Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47169AA1240FE4DB003FE909 /* Content Views */ = {
+			isa = PBXGroup;
+			children = (
+				47169AA2240FE50C003FE909 /* PadsContentView.swift */,
+			);
+			path = "Content Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47169A93240FDF0F003FE909 /* PadSceneDependencyProvider.swift in Sources */,
+				47169A93240FDF0F003FE909 /* PadsSceneDependencyProvider.swift in Sources */,
 				352A9F8B24019EAD00239060 /* Shared.swift in Sources */,
 				47169A95240FDF8F003FE909 /* SceneConfiguration.swift in Sources */,
 				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
@@ -362,7 +392,9 @@
 				352A9F872401898100239060 /* AppTheme.swift in Sources */,
 				352A9F80240182C900239060 /* ScreenViewController.swift in Sources */,
 				352A9F7E240182BE00239060 /* ScreenView.swift in Sources */,
+				47169A9C240FE371003FE909 /* PadsViewController.swift in Sources */,
 				352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */,
+				47169AA3240FE50C003FE909 /* PadsContentView.swift in Sources */,
 				47169A9A240FE1AE003FE909 /* WindowSceneHandling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

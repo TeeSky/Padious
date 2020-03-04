@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configurationForConnecting connectingSceneSession: UISceneSession,
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
-        return SceneConfiguration<PadSceneDependencyProvider>(sceneSession: connectingSceneSession)
+        return SceneConfiguration<PadsSceneDependencyProvider>(sceneSession: connectingSceneSession)
     }
 
     func application(

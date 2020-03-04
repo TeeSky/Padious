@@ -1,5 +1,5 @@
 //
-//  PadSceneDependencyProvider.swift
+//  PadsSceneDependencyProvider.swift
 //  Padious
 //
 //  Created by Tomáš Skýpala on 04/03/2020.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-struct PadSceneDependencyProvider: SceneDependencyProviding {
+struct PadsSceneDependencyProvider: SceneDependencyProviding {
     
     var sceneHandler: WindowSceneHandling?
     
     func makeRootViewController() -> UIViewController {
-        fatalError("not implemented")
+        return PadsViewController(rootView: PadsContentView())
     }
     
 }
