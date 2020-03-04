@@ -12,23 +12,18 @@ class ScreenViewController<SV: ScreenView>: UIViewController {
 
     open var theme: ColorProviding = Shared.appTheme
 
-    var screenView: SV {
-        guard let screenView = view as? SV else {
-            assertionFailure("View controller's screen view \(SV.Type.self) found nil.")
-            let screenView = SV()
-            self.view = screenView
-            return screenView
-        }
-        return screenView
+    var screenView: SV? {
+        return view as? SV
     }
 
     override func loadView() {
         view = SV()
+        screenView?.setupSubviews()
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
 
-        screenView.updateColorsWith(theme.getAppColorFor(self.traitCollection))
+        screenView?.updateColorsWith(theme.getAppColorFor(self.traitCollection))
     }
 }
