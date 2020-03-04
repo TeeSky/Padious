@@ -9,5 +9,8 @@
 import SwiftUI
 
 struct PadsContentView: View {
-    
+
+    var body: some View {
+        Text("Hello World.")
+    }
 }
