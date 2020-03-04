@@ -1,5 +1,5 @@
 //
-//  MainPadSceneDelegate.swift
+//  SceneDelegate.swift
 //  Padious
 //
 //  Created by Tomas Skypala on 19/02/2020.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class MainPadSceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SceneDelegate<DependencyProvider: SceneDependencyProviding>: UIResponder, UIWindowSceneDelegate {
+
+    let dependencyProvider = DependencyProvider()
 
     var window: UIWindow?
 
@@ -17,12 +19,15 @@ class MainPadSceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene
-        // `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see
-        // `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = scene as? UIWindowScene else { return }
+
+        let window = UIWindow(windowScene: windowScene)
+        self.window = window
+        window.rootViewController = dependencyProvider.makeRootViewController()
+
+        dependencyProvider.sceneHandler?.windowWillBecomeVisible(window)
+        window.makeKeyAndVisible()
+        dependencyProvider.sceneHandler?.windowDidBecomeVisible(window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

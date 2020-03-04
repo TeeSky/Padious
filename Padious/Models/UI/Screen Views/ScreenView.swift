@@ -1,5 +1,5 @@
 //
-//  BaseScreenView.swift
+//  ScreenView.swift
 //  Padious
 //
 //  Created by Tomas Skypala on 22/02/2020.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol BaseScreenView: UIView {
+protocol ScreenView: UIView {
 
     func setupSubviews()
 
     func updateColorsWith(_ appColor: AppColorProtocol)
 }
 
-extension BaseScreenView {
+extension ScreenView {
 
     init() {
         self.init()
