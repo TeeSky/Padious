@@ -16,7 +16,7 @@
 		35320CDE23FF359700E63A82 /* ViewControllerProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35320CDD23FF359700E63A82 /* ViewControllerProviding.swift */; };
 		35320CE323FF3B1700E63A82 /* WindowControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35320CE223FF3B1700E63A82 /* WindowControlling.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
-		359CC1E523FCAB3D0092D282 /* MainPadSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */; };
+		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
 		359CC1EF23FCAB3E0092D282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1ED23FCAB3E0092D282 /* LaunchScreen.storyboard */; };
 		359CC1FA23FCAB3E0092D282 /* PadiousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1F923FCAB3E0092D282 /* PadiousTests.swift */; };
@@ -51,7 +51,7 @@
 		35320CE223FF3B1700E63A82 /* WindowControlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowControlling.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPadSceneDelegate.swift; sourceTree = "<group>"; };
+		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		359CC1EB23FCAB3E0092D282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359CC1EE23FCAB3E0092D282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		359CC1F023FCAB3E0092D282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				35320CDF23FF35FE00E63A82 /* Models */,
 				35201F9323FCC686006C7C40 /* Dependencies */,
 				359CC1E223FCAB3D0092D282 /* AppDelegate.swift */,
-				359CC1E423FCAB3D0092D282 /* MainPadSceneDelegate.swift */,
+				359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */,
 				359CC1EB23FCAB3E0092D282 /* Assets.xcassets */,
 				359CC1ED23FCAB3E0092D282 /* LaunchScreen.storyboard */,
 				359CC1F023FCAB3E0092D282 /* Info.plist */,
@@ -334,7 +334,7 @@
 				35320CE323FF3B1700E63A82 /* WindowControlling.swift in Sources */,
 				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
 				359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */,
-				359CC1E523FCAB3D0092D282 /* MainPadSceneDelegate.swift in Sources */,
+				359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */,
 				35320CDE23FF359700E63A82 /* ViewControllerProviding.swift in Sources */,
 				352A9F872401898100239060 /* ColorProvider.swift in Sources */,
 				352A9F80240182C900239060 /* BaseViewController.swift in Sources */,

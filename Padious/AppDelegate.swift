@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private final class MainPadSceneConfiguration: UISceneConfiguration {
 
     private static let configName = "Main Pad Scene Configuration"
-    private static let delegateClass = MainPadSceneDelegate.self
+    private static let delegateClass = SceneDelegate.self
 
     init(sceneSession: UISceneSession) {
         super.init(name: Self.configName, sessionRole: sceneSession.role)
