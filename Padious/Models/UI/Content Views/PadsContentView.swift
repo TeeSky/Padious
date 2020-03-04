@@ -10,11 +10,13 @@ import SwiftUI
 
 struct PadsContentView: View {
 
+    private let padResourcesProvider: PadResourcesProviding
     private let gridMaker: GridMaking
 
     @Environment(\.verticalSizeClass) private var verticalSizeClass: UserInterfaceSizeClass?
 
     init(
+        padResourcesProvider: PadResourcesProviding = PadResourcesProvider(),
         gridMaker: GridMaking = ScalingGridMaker()
     ) {
         self.padResourcesProvider = padResourcesProvider
