@@ -30,7 +30,7 @@ struct PadResourcesProvider: PadResourcesProviding {
         )
 
         var padResources = [PadResource]()
-        for (fileName, soundURL) in soundFileNameURLDict {
+        for (fileName, soundURL) in soundFileNameURLDict.sorted(by: { $0.0 < $1.0 }) {
             guard let imageURL = imageFileNameURLDict[fileName] else { continue }
 
             padResources.append(.init(imageURL: imageURL, soundURL: soundURL))
