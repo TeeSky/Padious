@@ -11,19 +11,21 @@ import SwiftUI
 struct PadCollectionView: View {
 
     private let padResourcesProvider: PadResourcesProviding
+    private let audioPlayer: AudioPlaying
 
-    init(padResourcesProvider: PadResourcesProviding) {
+    init(padResourcesProvider: PadResourcesProviding, audioPlayer: AudioPlaying) {
         self.padResourcesProvider = padResourcesProvider
+        self.audioPlayer = audioPlayer
     }
 
     var body: some View {
 
-        ForEach(padResourcesProvider.padResources, id: \.uuid) {
-            Image(uiImage: UIImage(contentsOfFile: $0.imageURL.path)!)
+        ForEach(padResourcesProvider.padResources, id: \.uuid) { padResource in
+            Image(uiImage: UIImage(contentsOfFile: padResource.imageURL.path)!)
                 .resizable()
                 .scaledToFill()
                 .cornerRadius(8)
-                .gesture(TapGesture().onEnded({}))
+                .gesture(TapGesture().onEnded({ self.audioPlayer.playSound(with: padResource.soundURL) }))
         }
     }
 }

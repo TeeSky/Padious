@@ -23,6 +23,7 @@
 		354CAA3B241071F000D7F6B7 /* Images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA39241071F000D7F6B7 /* Images.bundle */; };
 		354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */; };
 		354CAA402410790700D7F6B7 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */; };
+		354CAA4224107A9900D7F6B7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		354CAA39241071F000D7F6B7 /* Images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Images.bundle; sourceTree = "<group>"; };
 		354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadCollectionView.swift; sourceTree = "<group>"; };
 		354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaying.swift; sourceTree = "<group>"; };
+		354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				354CAA2B24105BF600D7F6B7 /* GridMaking.swift */,
 				354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */,
 				354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */,
+				354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */,
 				352A9F872401898100239060 /* AppTheme.swift in Sources */,
 				354CAA3024105DE600D7F6B7 /* ScalingGridMaker.swift in Sources */,
+				354CAA4224107A9900D7F6B7 /* AudioPlayer.swift in Sources */,
 				352A9F80240182C900239060 /* ScreenViewController.swift in Sources */,
 				352A9F7E240182BE00239060 /* ScreenView.swift in Sources */,
 				354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */,
