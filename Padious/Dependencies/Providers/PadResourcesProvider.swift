@@ -16,14 +16,15 @@ struct PadResourcesProvider: PadResourcesProviding {
     private static let imagesDirectoryName = "Images.bundle"
     private static let soundsDirectoryName = "Sounds.bundle"
 
-    func getPadResources() -> [PadResource] {
+    let padResources: [PadResource]
 
-        let soundFileNameURLDict = getFileNameURLDictionary(
+    init() { // FIXME: make testable
+        let soundFileNameURLDict = Self.getFileNameURLDictionary(
             fromResourceWithName: Self.resourceName,
             directoryName: Self.soundsDirectoryName
         )
 
-        let imageFileNameURLDict = getFileNameURLDictionary(
+        let imageFileNameURLDict = Self.getFileNameURLDictionary(
             fromResourceWithName: Self.resourceName,
             directoryName: Self.imagesDirectoryName
         )
@@ -35,10 +36,10 @@ struct PadResourcesProvider: PadResourcesProviding {
             padResources.append(.init(imageURL: imageURL, soundURL: soundURL))
         }
 
-        return padResources
+        self.padResources = padResources
     }
 
-    private func getFileNameURLDictionary(
+    private static func getFileNameURLDictionary(
         fromResourceWithName resourceName: String,
         directoryName: String
     ) -> [String: URL] {
@@ -67,7 +68,7 @@ struct PadResourcesProvider: PadResourcesProviding {
         return Dictionary(uniqueKeysWithValues: allFileURLs.map { url in (getFileName(from: url), url) })
     }
 
-    private func getFileName(from fileURL: URL) -> String {
+    private static func getFileName(from fileURL: URL) -> String {
         return fileURL.deletingPathExtension().lastPathComponent
     }
 }

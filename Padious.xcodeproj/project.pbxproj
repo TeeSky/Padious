@@ -21,6 +21,7 @@
 		354CAA332410619B00D7F6B7 /* Array+chunked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA322410619B00D7F6B7 /* Array+chunked.swift */; };
 		354CAA3A241071F000D7F6B7 /* Sounds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA38241071F000D7F6B7 /* Sounds.bundle */; };
 		354CAA3B241071F000D7F6B7 /* Images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA39241071F000D7F6B7 /* Images.bundle */; };
+		354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		354CAA322410619B00D7F6B7 /* Array+chunked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunked.swift"; sourceTree = "<group>"; };
 		354CAA38241071F000D7F6B7 /* Sounds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sounds.bundle; sourceTree = "<group>"; };
 		354CAA39241071F000D7F6B7 /* Images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Images.bundle; sourceTree = "<group>"; };
+		354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadCollectionView.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		35201F9323FCC686006C7C40 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				354CAA3E241078F700D7F6B7 /* Utilities */,
 				47169A98240FE19B003FE909 /* Handlers */,
 				47169A90240FDE82003FE909 /* Resources */,
 				47169A91240FDE8D003FE909 /* Providers */,
@@ -265,18 +268,19 @@
 		47169AA0240FE3F7003FE909 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				47169AA1240FE4DB003FE909 /* Content Views */,
+				47169AA1240FE4DB003FE909 /* SwiftUI Views */,
 				47169A9D240FE3A7003FE909 /* Screen Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		47169AA1240FE4DB003FE909 /* Content Views */ = {
+		47169AA1240FE4DB003FE909 /* SwiftUI Views */ = {
 			isa = PBXGroup;
 			children = (
 				47169AA2240FE50C003FE909 /* PadsContentView.swift */,
+				354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */,
 			);
-			path = "Content Views";
+			path = "SwiftUI Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +479,7 @@
 				354CAA3024105DE600D7F6B7 /* ScalingGridMaker.swift in Sources */,
 				352A9F80240182C900239060 /* ScreenViewController.swift in Sources */,
 				352A9F7E240182BE00239060 /* ScreenView.swift in Sources */,
+				354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */,
 				47169A9C240FE371003FE909 /* PadsViewController.swift in Sources */,
 				352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */,
 				354CAA2E24105D4100D7F6B7 /* PadResourcesProvider.swift in Sources */,

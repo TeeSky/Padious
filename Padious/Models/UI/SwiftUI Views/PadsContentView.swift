@@ -24,7 +24,11 @@ struct PadsContentView: View {
     }
 
     var body: some View {
-        Text("Hello World.")
+        NavigationView {
+            List {
+                PadCollectionView(padResourcesProvider: padResourcesProvider)
+            }
+        }
     }
 }
 

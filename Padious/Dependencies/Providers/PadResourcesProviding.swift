@@ -10,11 +10,13 @@ import Foundation
 
 struct PadResource {
 
+    let uuid = UUID()
+
     let imageURL: URL
     let soundURL: URL
 }
 
 protocol PadResourcesProviding {
 
-    func getPadResources() -> [PadResource]
+    var padResources: [PadResource] { get }
 }
