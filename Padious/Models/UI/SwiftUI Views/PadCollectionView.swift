@@ -21,7 +21,7 @@ struct PadCollectionView: View {
     var body: some View {
 
         ForEach(padResourcesProvider.padResources, id: \.uuid) { padResource in
-            Image(uiImage: UIImage(contentsOfFile: padResource.imageURL.path)!)
+            Image(uiImage: UIImage(contentsOfFile: padResource.imageURL.path)!) // FIXME: get rid of the !
                 .resizable()
                 .scaledToFill()
                 .cornerRadius(8)
