@@ -13,6 +13,17 @@
 		352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8824019B5200239060 /* AppColorProtocol.swift */; };
 		352A9F8B24019EAD00239060 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8A24019EAD00239060 /* Shared.swift */; };
 		352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8C2401A2E500239060 /* ColorProviding.swift */; };
+		354CA96224104E0100D7F6B7 /* PadResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CA95A24104D7400D7F6B7 /* PadResources.bundle */; };
+		354CAA2A2410569800D7F6B7 /* PadResourcesProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */; };
+		354CAA2C24105BF600D7F6B7 /* GridMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA2B24105BF600D7F6B7 /* GridMaking.swift */; };
+		354CAA2E24105D4100D7F6B7 /* PadResourcesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA2D24105D4100D7F6B7 /* PadResourcesProvider.swift */; };
+		354CAA3024105DE600D7F6B7 /* ScalingGridMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */; };
+		354CAA332410619B00D7F6B7 /* Array+chunked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA322410619B00D7F6B7 /* Array+chunked.swift */; };
+		354CAA3A241071F000D7F6B7 /* Sounds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA38241071F000D7F6B7 /* Sounds.bundle */; };
+		354CAA3B241071F000D7F6B7 /* Images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CAA39241071F000D7F6B7 /* Images.bundle */; };
+		354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */; };
+		354CAA402410790700D7F6B7 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */; };
+		354CAA4224107A9900D7F6B7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
@@ -28,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		354CA96024104DED00D7F6B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359CC1D723FCAB3D0092D282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 354CA95924104D7400D7F6B7;
+			remoteInfo = PadResources;
+		};
 		359CC1F623FCAB3E0092D282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 359CC1D723FCAB3D0092D282 /* Project object */;
@@ -51,6 +69,18 @@
 		352A9F8824019B5200239060 /* AppColorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorProtocol.swift; sourceTree = "<group>"; };
 		352A9F8A24019EAD00239060 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		352A9F8C2401A2E500239060 /* ColorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProviding.swift; sourceTree = "<group>"; };
+		354CA95A24104D7400D7F6B7 /* PadResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		354CA95C24104D7400D7F6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadResourcesProviding.swift; sourceTree = "<group>"; };
+		354CAA2B24105BF600D7F6B7 /* GridMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMaking.swift; sourceTree = "<group>"; };
+		354CAA2D24105D4100D7F6B7 /* PadResourcesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadResourcesProvider.swift; sourceTree = "<group>"; };
+		354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingGridMaker.swift; sourceTree = "<group>"; };
+		354CAA322410619B00D7F6B7 /* Array+chunked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunked.swift"; sourceTree = "<group>"; };
+		354CAA38241071F000D7F6B7 /* Sounds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sounds.bundle; sourceTree = "<group>"; };
+		354CAA39241071F000D7F6B7 /* Images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Images.bundle; sourceTree = "<group>"; };
+		354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadCollectionView.swift; sourceTree = "<group>"; };
+		354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaying.swift; sourceTree = "<group>"; };
+		354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +129,7 @@
 		35201F9323FCC686006C7C40 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				354CAA3E241078F700D7F6B7 /* Utilities */,
 				47169A98240FE19B003FE909 /* Handlers */,
 				47169A90240FDE82003FE909 /* Resources */,
 				47169A91240FDE8D003FE909 /* Providers */,
@@ -126,12 +157,42 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		354CA95B24104D7400D7F6B7 /* PadResources */ = {
+			isa = PBXGroup;
+			children = (
+				354CAA39241071F000D7F6B7 /* Images.bundle */,
+				354CAA38241071F000D7F6B7 /* Sounds.bundle */,
+				354CA95C24104D7400D7F6B7 /* Info.plist */,
+			);
+			path = PadResources;
+			sourceTree = "<group>";
+		};
+		354CAA312410618B00D7F6B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				354CAA322410619B00D7F6B7 /* Array+chunked.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		354CAA3E241078F700D7F6B7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				354CAA2B24105BF600D7F6B7 /* GridMaking.swift */,
+				354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */,
+				354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */,
+				354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		359CC1D623FCAB3D0092D282 = {
 			isa = PBXGroup;
 			children = (
 				359CC1E123FCAB3D0092D282 /* Padious */,
 				359CC1F823FCAB3E0092D282 /* PadiousTests */,
 				359CC20323FCAB3E0092D282 /* PadiousUITests */,
+				354CA95B24104D7400D7F6B7 /* PadResources */,
 				359CC1E023FCAB3D0092D282 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,6 +203,7 @@
 				359CC1DF23FCAB3D0092D282 /* Padious.app */,
 				359CC1F523FCAB3E0092D282 /* PadiousTests.xctest */,
 				359CC20023FCAB3E0092D282 /* PadiousUITests.xctest */,
+				354CA95A24104D7400D7F6B7 /* PadResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +211,7 @@
 		359CC1E123FCAB3D0092D282 /* Padious */ = {
 			isa = PBXGroup;
 			children = (
+				354CAA312410618B00D7F6B7 /* Extensions */,
 				352A9F8E2401CFBC00239060 /* ViewControllers */,
 				35320CDF23FF35FE00E63A82 /* Models */,
 				35201F9323FCC686006C7C40 /* Dependencies */,
@@ -193,6 +256,8 @@
 				352A9F8C2401A2E500239060 /* ColorProviding.swift */,
 				47169A96240FE0F5003FE909 /* SceneDependencyProviding.swift */,
 				47169A92240FDF0F003FE909 /* PadsSceneDependencyProvider.swift */,
+				354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */,
+				354CAA2D24105D4100D7F6B7 /* PadResourcesProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -216,23 +281,39 @@
 		47169AA0240FE3F7003FE909 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				47169AA1240FE4DB003FE909 /* Content Views */,
+				47169AA1240FE4DB003FE909 /* SwiftUI Views */,
 				47169A9D240FE3A7003FE909 /* Screen Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		47169AA1240FE4DB003FE909 /* Content Views */ = {
+		47169AA1240FE4DB003FE909 /* SwiftUI Views */ = {
 			isa = PBXGroup;
 			children = (
 				47169AA2240FE50C003FE909 /* PadsContentView.swift */,
+				354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */,
 			);
-			path = "Content Views";
+			path = "SwiftUI Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		354CA95924104D7400D7F6B7 /* PadResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354CA95F24104D7400D7F6B7 /* Build configuration list for PBXNativeTarget "PadResources" */;
+			buildPhases = (
+				354CA95824104D7400D7F6B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PadResources;
+			productName = PadResources;
+			productReference = 354CA95A24104D7400D7F6B7 /* PadResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		359CC1DE23FCAB3D0092D282 /* Padious */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 359CC20923FCAB3E0092D282 /* Build configuration list for PBXNativeTarget "Padious" */;
@@ -245,6 +326,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				354CA96124104DED00D7F6B7 /* PBXTargetDependency */,
 			);
 			name = Padious;
 			productName = Padious;
@@ -297,6 +379,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Tomas Skypala";
 				TargetAttributes = {
+					354CA95924104D7400D7F6B7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					359CC1DE23FCAB3D0092D282 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -326,15 +411,26 @@
 				359CC1DE23FCAB3D0092D282 /* Padious */,
 				359CC1F423FCAB3E0092D282 /* PadiousTests */,
 				359CC1FF23FCAB3E0092D282 /* PadiousUITests */,
+				354CA95924104D7400D7F6B7 /* PadResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		354CA95824104D7400D7F6B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354CAA3A241071F000D7F6B7 /* Sounds.bundle in Resources */,
+				354CAA3B241071F000D7F6B7 /* Images.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		359CC1DD23FCAB3D0092D282 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354CA96224104E0100D7F6B7 /* PadResources.bundle in Resources */,
 				359CC1EF23FCAB3E0092D282 /* LaunchScreen.storyboard in Resources */,
 				359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */,
 			);
@@ -386,14 +482,22 @@
 				352A9F8B24019EAD00239060 /* Shared.swift in Sources */,
 				47169A95240FDF8F003FE909 /* SceneConfiguration.swift in Sources */,
 				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
+				354CAA402410790700D7F6B7 /* AudioPlaying.swift in Sources */,
+				354CAA2C24105BF600D7F6B7 /* GridMaking.swift in Sources */,
 				47169A97240FE0F5003FE909 /* SceneDependencyProviding.swift in Sources */,
+				354CAA2A2410569800D7F6B7 /* PadResourcesProviding.swift in Sources */,
+				354CAA332410619B00D7F6B7 /* Array+chunked.swift in Sources */,
 				359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */,
 				359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */,
 				352A9F872401898100239060 /* AppTheme.swift in Sources */,
+				354CAA3024105DE600D7F6B7 /* ScalingGridMaker.swift in Sources */,
+				354CAA4224107A9900D7F6B7 /* AudioPlayer.swift in Sources */,
 				352A9F80240182C900239060 /* ScreenViewController.swift in Sources */,
 				352A9F7E240182BE00239060 /* ScreenView.swift in Sources */,
+				354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */,
 				47169A9C240FE371003FE909 /* PadsViewController.swift in Sources */,
 				352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */,
+				354CAA2E24105D4100D7F6B7 /* PadResourcesProvider.swift in Sources */,
 				47169AA3240FE50C003FE909 /* PadsContentView.swift in Sources */,
 				47169A9A240FE1AE003FE909 /* WindowSceneHandling.swift in Sources */,
 			);
@@ -418,6 +522,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		354CA96124104DED00D7F6B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 354CA95924104D7400D7F6B7 /* PadResources */;
+			targetProxy = 354CA96024104DED00D7F6B7 /* PBXContainerItemProxy */;
+		};
 		359CC1F723FCAB3E0092D282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 359CC1DE23FCAB3D0092D282 /* Padious */;
@@ -442,6 +551,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		354CA95D24104D7400D7F6B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4UQ3LXCE4;
+				INFOPLIST_FILE = PadResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = xskypala.Padious.PadResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		354CA95E24104D7400D7F6B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4UQ3LXCE4;
+				INFOPLIST_FILE = PadResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = xskypala.Padious.PadResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		359CC20723FCAB3E0092D282 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -681,6 +822,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		354CA95F24104D7400D7F6B7 /* Build configuration list for PBXNativeTarget "PadResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354CA95D24104D7400D7F6B7 /* Debug */,
+				354CA95E24104D7400D7F6B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		359CC1DA23FCAB3D0092D282 /* Build configuration list for PBXProject "Padious" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
