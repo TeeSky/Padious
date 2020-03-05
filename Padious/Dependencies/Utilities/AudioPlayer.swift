@@ -8,26 +8,19 @@
 
 import AVFoundation
 
-struct AudioPlayer: AudioPlaying {
+class AudioPlayer: AudioPlaying {
 
-    static let shared = Self()
+    static let shared = AudioPlayer()
+
+    var player: AVAudioPlayer?
 
     func playSound(with url: URL) {
-        var avPlayer = AVAudioPlayer()
         do {
-            try AVAudioSession.sharedInstance().setCategory(
-                AVAudioSession.Category.playback,
-                mode: AVAudioSession.Mode.default
-            )
-            try AVAudioSession.sharedInstance().setActive(true)
-
-            avPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            avPlayer.volume = 1.0
-            avPlayer.prepareToPlay()
-            
-            avPlayer.play() // FIXME: does not play any sound
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
         } catch {
-            fatalError("not implemented")
+            fatalError("Failed to initiate audio player with contents of provided URL.")
         }
+
+        player?.play()
     }
 }
