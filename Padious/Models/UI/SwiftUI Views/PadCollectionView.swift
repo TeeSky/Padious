@@ -12,10 +12,16 @@ struct PadCollectionView: View {
 
     private let padResourcesProvider: PadResourcesProviding
     private let audioPlayer: AudioPlaying
+    private let gridMaker: GridMaking
 
-    init(padResourcesProvider: PadResourcesProviding, audioPlayer: AudioPlaying) {
+    init(
+        padResourcesProvider: PadResourcesProviding = PadResourcesProvider(),
+        audioPlayer: AudioPlaying = AudioPlayer.shared,
+        gridMaker: GridMaking = ScalingGridMaker()
+    ) {
         self.padResourcesProvider = padResourcesProvider
         self.audioPlayer = audioPlayer
+        self.gridMaker = gridMaker
     }
 
     var body: some View {
