@@ -6,16 +6,6 @@
 //  Copyright © 2020 Tomas Skypala. All rights reserved.
 //
 
-import Foundation
-
-struct PadResource {
-
-    let uuid = UUID()
-
-    let imageURL: URL
-    let soundURL: URL
-}
-
 protocol PadResourcesProviding {
 
     var padResources: [PadResource] { get }
