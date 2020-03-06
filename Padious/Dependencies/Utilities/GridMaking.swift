@@ -6,7 +6,24 @@
 //  Copyright © 2020 Tomas Skypala. All rights reserved.
 //
 
+import Foundation
+
+struct GridRow<Element> {
+    
+    let id: UUID = UUID()
+
+    let elements: [Element]
+
+    init(_ elements: [Element]) {
+        self.elements = elements
+    }
+
+    subscript(_ index: Int) -> Element {
+        return elements[index]
+    }
+}
+
 protocol GridMaking {
 
-    func makeGrid<Element: Any>(from elements: [Element]) -> [[Element]]
+    func makeGrid<Element: Any>(from elements: [Element]) -> [GridRow<Element>]
 }

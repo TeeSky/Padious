@@ -18,9 +18,9 @@ struct ScalingGridMaker: GridMaking {
 
     var orientation: Orientation?
 
-    func makeGrid<Element>(from elements: [Element]) -> [[Element]] {
+    func makeGrid<Element>(from elements: [Element]) -> [GridRow<Element>] {
         let currentOrientation = orientation ?? .unknown
-        return elements.chunked(into: currentOrientation.rowSize)
+        return elements.chunked(into: currentOrientation.rowSize).map { GridRow($0) }
     }
 
 }
