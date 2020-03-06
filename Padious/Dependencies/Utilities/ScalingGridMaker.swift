@@ -30,8 +30,8 @@ private extension ScalingGridMaker.Orientation {
     var rowSize: Int {
         switch self {
         case .vertical:     return 3
-        case .horizontal:   fatalError("not implemented")
-        case .unknown:      fatalError("not implemented")
+        case .horizontal:   return 3
+        case .unknown:      return 3
         }
     }
 }
