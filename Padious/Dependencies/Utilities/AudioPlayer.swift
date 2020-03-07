@@ -19,7 +19,12 @@ class AudioPlayer: NSObject, AudioPlaying {
 
     weak var delegate: AudioPlayerDelegate?
 
-    var player: AVAudioPlayer?
+    let id: UUID
+    private var player: AVAudioPlayer?
+
+    init(id: UUID = UUID()) {
+        self.id = id
+    }
 
     func playSound(with url: URL) {
         do {
