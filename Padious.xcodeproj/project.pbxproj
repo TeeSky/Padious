@@ -13,6 +13,7 @@
 		352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8824019B5200239060 /* AppColorProtocol.swift */; };
 		352A9F8B24019EAD00239060 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8A24019EAD00239060 /* Shared.swift */; };
 		352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A9F8C2401A2E500239060 /* ColorProviding.swift */; };
+		3533234A241400D700729B90 /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35332349241400D700729B90 /* PadView.swift */; };
 		354CA96224104E0100D7F6B7 /* PadResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354CA95A24104D7400D7F6B7 /* PadResources.bundle */; };
 		354CAA2A2410569800D7F6B7 /* PadResourcesProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */; };
 		354CAA2C24105BF600D7F6B7 /* GridMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA2B24105BF600D7F6B7 /* GridMaking.swift */; };
@@ -25,6 +26,9 @@
 		354CAA402410790700D7F6B7 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */; };
 		354CAA4224107A9900D7F6B7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */; };
 		355E8B722413103400FDEE09 /* PadResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E8B712413103400FDEE09 /* PadResource.swift */; };
+		3576FF0724143F8400752AF8 /* ParallelAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3576FF0624143F8400752AF8 /* ParallelAudioPlayer.swift */; };
+		3576FF0924143F9800752AF8 /* ParallelAudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3576FF0824143F9800752AF8 /* ParallelAudioPlaying.swift */; };
+		3576FF0B241446F500752AF8 /* AudioPlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3576FF0A241446F500752AF8 /* AudioPlayerFactory.swift */; };
 		359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E223FCAB3D0092D282 /* AppDelegate.swift */; };
 		359CC1E523FCAB3D0092D282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */; };
 		359CC1EC23FCAB3E0092D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359CC1EB23FCAB3E0092D282 /* Assets.xcassets */; };
@@ -70,6 +74,7 @@
 		352A9F8824019B5200239060 /* AppColorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorProtocol.swift; sourceTree = "<group>"; };
 		352A9F8A24019EAD00239060 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		352A9F8C2401A2E500239060 /* ColorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProviding.swift; sourceTree = "<group>"; };
+		35332349241400D700729B90 /* PadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadView.swift; sourceTree = "<group>"; };
 		354CA95A24104D7400D7F6B7 /* PadResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		354CA95C24104D7400D7F6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		354CAA292410569800D7F6B7 /* PadResourcesProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadResourcesProviding.swift; sourceTree = "<group>"; };
@@ -83,6 +88,9 @@
 		354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaying.swift; sourceTree = "<group>"; };
 		354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		355E8B712413103400FDEE09 /* PadResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadResource.swift; sourceTree = "<group>"; };
+		3576FF0624143F8400752AF8 /* ParallelAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelAudioPlayer.swift; sourceTree = "<group>"; };
+		3576FF0824143F9800752AF8 /* ParallelAudioPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelAudioPlaying.swift; sourceTree = "<group>"; };
+		3576FF0A241446F500752AF8 /* AudioPlayerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerFactory.swift; sourceTree = "<group>"; };
 		359CC1DF23FCAB3D0092D282 /* Padious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CC1E223FCAB3D0092D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CC1E423FCAB3D0092D282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +192,9 @@
 				354CAA2F24105DE600D7F6B7 /* ScalingGridMaker.swift */,
 				354CAA3F2410790700D7F6B7 /* AudioPlaying.swift */,
 				354CAA4124107A9900D7F6B7 /* AudioPlayer.swift */,
+				3576FF0A241446F500752AF8 /* AudioPlayerFactory.swift */,
+				3576FF0824143F9800752AF8 /* ParallelAudioPlaying.swift */,
+				3576FF0624143F8400752AF8 /* ParallelAudioPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -295,6 +306,7 @@
 			children = (
 				47169AA2240FE50C003FE909 /* PadsContentView.swift */,
 				354CAA3C2410776200D7F6B7 /* PadCollectionView.swift */,
+				35332349241400D700729B90 /* PadView.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -483,12 +495,15 @@
 			files = (
 				47169A93240FDF0F003FE909 /* PadsSceneDependencyProvider.swift in Sources */,
 				352A9F8B24019EAD00239060 /* Shared.swift in Sources */,
+				3576FF0B241446F500752AF8 /* AudioPlayerFactory.swift in Sources */,
 				355E8B722413103400FDEE09 /* PadResource.swift in Sources */,
 				47169A95240FDF8F003FE909 /* SceneConfiguration.swift in Sources */,
 				352A9F8D2401A2E500239060 /* ColorProviding.swift in Sources */,
 				354CAA402410790700D7F6B7 /* AudioPlaying.swift in Sources */,
 				354CAA2C24105BF600D7F6B7 /* GridMaking.swift in Sources */,
 				47169A97240FE0F5003FE909 /* SceneDependencyProviding.swift in Sources */,
+				3576FF0724143F8400752AF8 /* ParallelAudioPlayer.swift in Sources */,
+				3533234A241400D700729B90 /* PadView.swift in Sources */,
 				354CAA2A2410569800D7F6B7 /* PadResourcesProviding.swift in Sources */,
 				354CAA332410619B00D7F6B7 /* Array+chunked.swift in Sources */,
 				359CC1E323FCAB3D0092D282 /* AppDelegate.swift in Sources */,
@@ -501,6 +516,7 @@
 				354CAA3D2410776200D7F6B7 /* PadCollectionView.swift in Sources */,
 				47169A9C240FE371003FE909 /* PadsViewController.swift in Sources */,
 				352A9F8924019B5200239060 /* AppColorProtocol.swift in Sources */,
+				3576FF0924143F9800752AF8 /* ParallelAudioPlaying.swift in Sources */,
 				354CAA2E24105D4100D7F6B7 /* PadResourcesProvider.swift in Sources */,
 				47169AA3240FE50C003FE909 /* PadsContentView.swift in Sources */,
 				47169A9A240FE1AE003FE909 /* WindowSceneHandling.swift in Sources */,

@@ -12,17 +12,17 @@ struct PadCollectionView: View {
 
     static let imageCornerRadius: CGFloat = 8
 
+    private let audioPlayer: ParallelAudioPlaying
     private let padResourcesProvider: PadResourcesProviding
-    private let audioPlayer: AudioPlaying
     private let gridMaker: GridMaking
 
     init(
+        audioPlayer: ParallelAudioPlaying = ParallelAudioPlayer(),
         padResourcesProvider: PadResourcesProviding = PadResourcesProvider(),
-        audioPlayer: AudioPlaying = AudioPlayer.shared,
         gridMaker: GridMaking = ScalingGridMaker()
     ) {
-        self.padResourcesProvider = padResourcesProvider
         self.audioPlayer = audioPlayer
+        self.padResourcesProvider = padResourcesProvider
         self.gridMaker = gridMaker
 
         UITableView.appearance().separatorStyle = .none
@@ -35,23 +35,20 @@ struct PadCollectionView: View {
             GeometryReader { geometry in
                 HStack {
                     ForEach(gridRow.elements) { padResource in
-                        Image(uiImage: UIImage(contentsOfFile: padResource.imageURL.path)!) // FIXME: get rid of the !
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(Self.imageCornerRadius)
-                            .frame(
-                                width: geometry.size.width / 3,
-                                height: geometry.size.width / 3,
-                                alignment: .center
-                            )
-                            .onTapGesture {
-                                self.audioPlayer.playSound(with: padResource.soundURL)
-                            }
+                        PadView(audioPlayer: self, padResource: padResource, superViewGeometry: geometry.self)
                     }
                 }
-            }.frame(height: 125)
+            }.frame(height: 90)
         }
     }
+}
+
+extension PadCollectionView: PadViewAudioPlaying {
+
+    func playAudio(for resource: PadResource) {
+        audioPlayer.playAudio(with: resource.soundURL, mode: .sequential)
+    }
+
 }
 
 extension GridRow: Identifiable {
