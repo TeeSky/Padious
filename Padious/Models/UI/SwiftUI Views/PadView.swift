@@ -8,6 +8,11 @@
 
 import SwiftUI
 
+protocol PadViewAudioPlaying {
+
+    func playAudio(for resource: PadResource)
+}
+
 struct PadView: View {
 
     private static let minimumPadLongPressDuration = 0.25
@@ -16,13 +21,13 @@ struct PadView: View {
     @GestureState var dragState = DragState.inactive
     @State var viewState = CGSize.zero
 
-    private let audioPlayer: AudioPlaying
+    private let audioPlayer: PadViewAudioPlaying
 
     private let padResource: PadResource
     private let superViewGeometry: GeometryProxy
 
     init(
-        audioPlayer: AudioPlaying = AudioPlayer.shared,
+        audioPlayer: PadViewAudioPlaying,
         padResource: PadResource,
         superViewGeometry: GeometryProxy
     ) {
@@ -39,7 +44,7 @@ struct PadView: View {
                 // Long press begins.
                 case .first(true):
                     state = .pressing
-                    self.audioPlayer.playSound(with: self.padResource.soundURL)
+                    self.audioPlayer.playAudio(for: self.padResource)
                 // Long press confirmed, dragging may begin.
                 case .second(true, let drag):
                     state = .dragging(translation: drag?.translation ?? .zero)
