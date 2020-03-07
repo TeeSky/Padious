@@ -9,7 +9,7 @@
 import Foundation
 
 struct GridRow<Element> {
-    
+
     let id: UUID = UUID()
 
     let elements: [Element]
