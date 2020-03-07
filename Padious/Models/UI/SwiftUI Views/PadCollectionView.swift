@@ -13,16 +13,13 @@ struct PadCollectionView: View {
     static let imageCornerRadius: CGFloat = 8
 
     private let padResourcesProvider: PadResourcesProviding
-    private let audioPlayer: AudioPlaying
     private let gridMaker: GridMaking
 
     init(
         padResourcesProvider: PadResourcesProviding = PadResourcesProvider(),
-        audioPlayer: AudioPlaying = AudioPlayer.shared,
         gridMaker: GridMaking = ScalingGridMaker()
     ) {
         self.padResourcesProvider = padResourcesProvider
-        self.audioPlayer = audioPlayer
         self.gridMaker = gridMaker
 
         UITableView.appearance().separatorStyle = .none
@@ -35,21 +32,10 @@ struct PadCollectionView: View {
             GeometryReader { geometry in
                 HStack {
                     ForEach(gridRow.elements) { padResource in
-                        Image(uiImage: UIImage(contentsOfFile: padResource.imageURL.path)!) // FIXME: get rid of the !
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(Self.imageCornerRadius)
-                            .frame(
-                                width: geometry.size.width / 3,
-                                height: geometry.size.width / 3,
-                                alignment: .center
-                            )
-                            .onTapGesture {
-                                self.audioPlayer.playSound(with: padResource.soundURL)
-                            }
+                        PadView(padResource: padResource, superViewGeometry: geometry.self)
                     }
                 }
-            }.frame(height: 125)
+            }.frame(height: 90)
         }
     }
 }
