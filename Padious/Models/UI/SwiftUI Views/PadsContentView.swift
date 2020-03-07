@@ -16,8 +16,12 @@ struct PadsContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Text("Pads").font(Font.largeTitle).bold().padding(.vertical, 10)
                 PadCollectionView()
             }
+            .navigationBarHidden(true)
+            .navigationBarTitle("")
+
         }
     }
 }
