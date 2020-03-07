@@ -30,7 +30,8 @@ struct PadResourcesProvider: PadResourcesProviding {
         )
 
         var padResources = [PadResource]()
-        for (fileName, soundURL) in soundFileNameURLDict.sorted(by: { $0.0 < $1.0 }) {
+        for (fileNameWithIndex, soundURL) in soundFileNameURLDict.sorted(by: { $0.0 < $1.0 }) {
+            let fileName = Self.stripIndex(fromFileName: fileNameWithIndex)
             guard let imageURL = imageFileNameURLDict[fileName] else { continue }
 
             padResources.append(.init(imageURL: imageURL, soundURL: soundURL))
@@ -70,5 +71,13 @@ struct PadResourcesProvider: PadResourcesProviding {
 
     private static func getFileName(from fileURL: URL) -> String {
         return fileURL.deletingPathExtension().lastPathComponent
+    }
+
+    private static func stripIndex(fromFileName fileName: String) -> String {
+        guard let prefixSeparatingDashCharIndex = fileName.firstIndex(of: "-") else {
+            fatalError("Unexpected file name format.")
+        }
+
+        return String(fileName.suffix(from: fileName.index(prefixSeparatingDashCharIndex, offsetBy: 1)))
     }
 }
