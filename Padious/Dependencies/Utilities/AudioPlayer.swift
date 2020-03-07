@@ -26,7 +26,7 @@ class AudioPlayer: NSObject, AudioPlaying {
         self.id = id
     }
 
-    func playSound(with url: URL) {
+    func playAudio(with url: URL) {
         do {
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
         } catch {

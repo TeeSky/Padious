@@ -10,5 +10,5 @@ import Foundation
 
 protocol AudioPlaying: Identifiable {
 
-    func playSound(with url: URL)
+    func playAudio(with url: URL)
 }
