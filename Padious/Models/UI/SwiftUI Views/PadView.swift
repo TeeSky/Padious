@@ -37,27 +37,27 @@ struct PadView: View {
     }
 
     var body: some View {
-        let tapAndDragGesture = LongPressGesture(minimumDuration: Self.minimumPadLongPressDuration)
-            .sequenced(before: DragGesture())
-            .updating($dragState) { value, state, _ in
-                switch value {
-                // Long press begins.
-                case .first(true):
-                    state = .pressing
-                    self.audioPlayer.playAudio(for: self.padResource)
-                // Long press confirmed, dragging may begin.
-                case .second(true, let drag):
-                    state = .dragging(translation: drag?.translation ?? .zero)
-                // Dragging ended or the long press cancelled.
-                default:
-                    state = .inactive
-                }
-            }
-            .onEnded { value in
-                guard case .second(true, let drag?) = value else { return }
-                self.viewState.width += drag.translation.width
-                self.viewState.height += drag.translation.height
-            }
+//        let tapAndDragGesture = LongPressGesture(minimumDuration: Self.minimumPadLongPressDuration)
+//            .sequenced(before: DragGesture())
+//            .updating($dragState) { value, state, _ in
+//                switch value {
+//                // Long press begins.
+//                case .first(true):
+//                    state = .pressing
+//                // Long press confirmed, dragging may begin.
+//                case .second(true, let drag):
+//                    state = .dragging(translation: drag?.translation ?? .zero)
+//                    self.audioPlayer.playAudio(for: self.padResource)
+//                // Dragging ended or the long press cancelled.
+//                default:
+//                    state = .inactive
+//                }
+//            }
+//            .onEnded { value in
+//                guard case .second(true, let drag?) = value else { return }
+//                self.viewState.width += drag.translation.width
+//                self.viewState.height += drag.translation.height
+//            }
 
         return Image(uiImage: UIImage(contentsOfFile: padResource.imageURL.path)!) // FIXME: get rid of the !
             .resizable()
@@ -68,7 +68,10 @@ struct PadView: View {
                 height: superViewGeometry.size.width / 3,
                 alignment: .center
             )
-            .gesture(tapAndDragGesture)
+//            .gesture(tapAndDragGesture)
+            .onTapGesture {
+                self.audioPlayer.playAudio(for: self.padResource)
+            }
     }
 }
 
