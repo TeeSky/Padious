@@ -38,7 +38,7 @@ struct PadCollectionView: View {
                         PadView(audioPlayer: self, padResource: padResource, superViewGeometry: geometry.self)
                     }
                 }
-            }.frame(height: 90)
+            }.frame(height: 120)
         }
     }
 }
