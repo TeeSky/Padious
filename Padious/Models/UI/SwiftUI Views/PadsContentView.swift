@@ -11,28 +11,17 @@ import AVFoundation
 
 struct PadsContentView: View {
 
-    private let padResourcesProvider: PadResourcesProviding
-
-    private let audioPlayer: AudioPlaying
-    private let gridMaker: GridMaking
-
     @Environment(\.verticalSizeClass) private var verticalSizeClass: UserInterfaceSizeClass?
-
-    init(
-        padResourcesProvider: PadResourcesProviding = PadResourcesProvider(),
-        audioPlayer: AudioPlaying = AudioPlayer.shared,
-        gridMaker: GridMaking = ScalingGridMaker()
-    ) {
-        self.padResourcesProvider = padResourcesProvider
-        self.audioPlayer = audioPlayer
-        self.gridMaker = gridMaker
-    }
 
     var body: some View {
         NavigationView {
             List {
-                PadCollectionView(padResourcesProvider: padResourcesProvider, audioPlayer: audioPlayer)
+                Text("Pads").font(Font.largeTitle).bold().padding(.vertical, 10)
+                PadCollectionView()
             }
+            .navigationBarHidden(true)
+            .navigationBarTitle("")
+
         }
     }
 }

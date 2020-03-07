@@ -18,9 +18,9 @@ struct ScalingGridMaker: GridMaking {
 
     var orientation: Orientation?
 
-    func makeGrid<Element>(from elements: [Element]) -> [[Element]] {
+    func makeGrid<Element>(from elements: [Element]) -> [GridRow<Element>] {
         let currentOrientation = orientation ?? .unknown
-        return elements.chunked(into: currentOrientation.rowSize)
+        return elements.chunked(into: currentOrientation.rowSize).map { GridRow($0) }
     }
 
 }
@@ -30,8 +30,8 @@ private extension ScalingGridMaker.Orientation {
     var rowSize: Int {
         switch self {
         case .vertical:     return 3
-        case .horizontal:   fatalError("not implemented")
-        case .unknown:      fatalError("not implemented")
+        case .horizontal:   return 3
+        case .unknown:      return 3
         }
     }
 }
