@@ -35,6 +35,8 @@ class ParallelAudioPlayer: ParallelAudioPlaying {
         players[id]?.stop()
 
         let player = audioPlayerFactory.makeAudioPlayer(with: id)
+        player.delegate = self
+        
         players[id] = player
         player.playSound(with: url)
     }
