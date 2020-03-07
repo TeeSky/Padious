@@ -12,7 +12,13 @@ class ParallelAudioPlayer: ParallelAudioPlaying {
 
     private let sequentialModeCommonID: UUID = UUID()
 
+    private let audioPlayerFactory: AudioPlayerFactoryProtocol
+
     var players: [UUID: AudioPlayer] = [:]
+
+    init(audioPlayerFactory: AudioPlayerFactoryProtocol = AudioPlayerFactory()) {
+        self.audioPlayerFactory = audioPlayerFactory
+    }
 
     func playAudio(with url: URL, mode: ParallelPlayMode) {
         let playingID: UUID
@@ -28,7 +34,7 @@ class ParallelAudioPlayer: ParallelAudioPlaying {
     private func playAudio(with url: URL, uniqueBy id: UUID) {
         players[id]?.stop()
 
-        let player = AudioPlayer(id: id)
+        let player = audioPlayerFactory.makeAudioPlayer(with: id)
         players[id] = player
         player.playSound(with: url)
     }

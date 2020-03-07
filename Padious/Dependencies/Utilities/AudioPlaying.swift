@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AudioPlaying {
+protocol AudioPlaying: Identifiable {
 
     func playSound(with url: URL)
 }
