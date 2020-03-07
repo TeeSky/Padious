@@ -12,13 +12,16 @@ struct PadCollectionView: View {
 
     static let imageCornerRadius: CGFloat = 8
 
+    private let audioPlayer: ParallelAudioPlaying
     private let padResourcesProvider: PadResourcesProviding
     private let gridMaker: GridMaking
 
     init(
+        audioPlayer: ParallelAudioPlaying = ParallelAudioPlayer(),
         padResourcesProvider: PadResourcesProviding = PadResourcesProvider(),
         gridMaker: GridMaking = ScalingGridMaker()
     ) {
+        self.audioPlayer = audioPlayer
         self.padResourcesProvider = padResourcesProvider
         self.gridMaker = gridMaker
 
@@ -32,12 +35,20 @@ struct PadCollectionView: View {
             GeometryReader { geometry in
                 HStack {
                     ForEach(gridRow.elements) { padResource in
-                        PadView(padResource: padResource, superViewGeometry: geometry.self)
+                        PadView(audioPlayer: self, padResource: padResource, superViewGeometry: geometry.self)
                     }
                 }
             }.frame(height: 90)
         }
     }
+}
+
+extension PadCollectionView: PadViewAudioPlaying {
+
+    func playAudio(for resource: PadResource) {
+        audioPlayer.playAudio(with: resource.soundURL, mode: .sequential)
+    }
+
 }
 
 extension GridRow: Identifiable {
