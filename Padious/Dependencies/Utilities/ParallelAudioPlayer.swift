@@ -17,9 +17,9 @@ class ParallelAudioPlayer: ParallelAudioPlaying {
     func playAudio(with url: URL, mode: ParallelPlayMode) {
         let playingID: UUID
         switch mode {
-        case .sequential:       playingID = sequentialModeCommonID
-        case .fullyParallel:    fatalError("not implemented")
-        case .groupedByID:      fatalError("not implemented")
+        case .sequential:           playingID = sequentialModeCommonID
+        case .fullyParallel:        playingID = UUID()
+        case .groupedByID(let id):  playingID = id
         }
 
         playAudio(with: url, uniqueBy: playingID)
